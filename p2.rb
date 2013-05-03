@@ -1,5 +1,5 @@
 # problem 2
-# find the sum of all fibonacci numbers less than 4000000
+# find the sum of all even fibonacci numbers less than 4000000
 
 $sum = 0
 
