@@ -3,18 +3,22 @@
 
 # brute forcing away
 
-num = 3
-count = 1
+num = 2
+count = 0
+target = 10001
 
-while (count < 10)
+while (count < target)
 	
 	i = 2
 	sqrt = Math.sqrt(num)
 	is_prime = true
 	
-	while (i < sqrt)
+	# print num.to_s + "(" + sqrt.to_s + ") "
+	
+	# doh... switched this <= with a <
+	while (i <= sqrt)
 		
-		if (num % i == 0)
+		if (num % i == 0 && i != num)
 			is_prime = false
 			break
 		end
@@ -24,7 +28,7 @@ while (count < 10)
 	end
 	
 	if (is_prime)
-		puts num
+		# puts num.to_s
 		count += 1
 	end
 	
@@ -32,4 +36,4 @@ while (count < 10)
 	
 end
 
-#puts (num - 1)
+puts (num - 1)
